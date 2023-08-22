@@ -1,12 +1,12 @@
 #include "main.h"
 /**
  * _printf - A function that produces an output according to a format.
- * format - A format in which argument will be printed.
+ *@format: A format in which argument will be printed.
  *          Supported format specifiers are %c, %s, and %%.
  * Return: The number of characters printed,
  *         and -1 in case of an error.
  */
-int _printf( const char *format, ...)
+int _printf(const char *format, ...)
 {
 	int current_count = 0, i;
 	va_list args;
