@@ -21,11 +21,11 @@ int _printf(const char *format, ...)
 	{
 	if (format[i] == '%')
 	{
-	e_char(format[++i], args, &current_count);
+	handle_char(format[++i], args, &current_count);
 	}
 	else
 	{
-	p_write(1, &format[i], 1);
+	write(1, &format[i], 1);
 	current_count++;
 	}
 	}
